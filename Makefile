@@ -6,3 +6,8 @@ run:
 
 shell:
 	docker-compose -f docker-compose.yml run --service-ports backend-cli bash
+
+# Run within the container
+reconcile:
+	export DJANGO_SETTINGS_MODULE=musicaggregator.settings.base && \
+	python src/manage.py reconciler $(file)

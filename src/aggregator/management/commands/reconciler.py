@@ -1,5 +1,4 @@
-from lib2to3.pytree import Base
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 
 from reconciler.reconliator import Reconciliator
 from aggregator.repository import MusicRepository
@@ -12,10 +11,11 @@ class Command(BaseCommand):
         parser.add_argument('metadata', nargs='+', type=str)
     
     def handle(self, *args, **options):
-        self.stdout.write(f'Processing music entries in {options["metadata"]}')
+        csv_file = options['metadata'][0]
+        self.stdout.write(f'Processing music entries in {csv_file}')
 
         music_repository = MusicRepository()
         reconciler = Reconciliator(music_repository)
-        reconciler.read_csv(options['metadata'])
+        reconciler.read_csv(csv_file)
 
-        self.stdout.write(f'Succesfully finished processing {options["metadata"]}')
+        self.stdout.write(f'Succesfully finished processing {csv_file}')
