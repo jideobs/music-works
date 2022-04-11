@@ -27,5 +27,14 @@ services:
       - postgres
     expose:
       - 8000
+  backend-cli:
+    networks:
+      - djangonetwork
+    build:
+      context: .
+    depends_on:
+      - postgres
+    links:
+      - postgres
 networks:
   djangonetwork:

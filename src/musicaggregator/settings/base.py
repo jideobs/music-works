@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'musicaggregator.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'music_aggregator',
-        'USER': 'music_db_user',
-        'PASSWORD': 'password',
+        'NAME': 'music',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
         'HOST': 'postgres',
-        'PORT': '5433',
+        'PORT': '5432',
     },
 }
 
