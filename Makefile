@@ -9,5 +9,5 @@ shell:
 
 # Run within the container
 reconcile:
-	export DJANGO_SETTINGS_MODULE=musicaggregator.settings.base && \
+	export DJANGO_SETTINGS_MODULE=musicworks.settings.base && \
 	python src/manage.py reconciler $(file)

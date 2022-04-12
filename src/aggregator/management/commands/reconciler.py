@@ -18,4 +18,4 @@ class Command(BaseCommand):
         reconciler = Reconciliator(music_repository)
         reconciler.read_csv(csv_file)
 
-        self.stdout.write(f'Succesfully finished processing {csv_file}')
+        self.stdout.write(f'Successfully finished processing {csv_file}')

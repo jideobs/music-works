@@ -1,4 +1,4 @@
-from musicaggregator.settings.base import *
+from musicworks.settings.base import *
 
 DEBUG = True
 

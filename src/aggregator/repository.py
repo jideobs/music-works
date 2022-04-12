@@ -16,7 +16,7 @@ class MusicRepository:
                     contributors=[contributor.name for contributor in music.contributors.all()], 
                     iswc=music.iswc)
             except Music.DoesNotExist:
-                return
+                return None
         else:
             music = Music.objects.filter(
                 title_slug=music_entry.title.lower(),
@@ -29,9 +29,11 @@ class MusicRepository:
                     iswc=music.iswc)
 
     def _insert_contributors(self, contributors: List[str]) -> List[Contributor]:
-        contributors = [Contributor(name=name) for name in contributors]
-        return Contributor.objects.bulk_create(contributors)
-
+        contributors_list = []
+        for name in contributors:
+            contributor, _ = Contributor.objects.get_or_create(name=name)
+            contributors_list.append(contributor)
+        return contributors_list
 
     def insert_music(self, music_entry: MusicEntry) -> uuid.uuid4:
         music = Music(

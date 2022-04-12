@@ -4,7 +4,7 @@ from mockito import when, mock, verify, ANY
 
 from reconciler.models import MusicEntry
 
-from musicaggregator.settings.base import BASE_DIR
+from musicworks.settings.base import BASE_DIR
 from .reconliator import Reconciliator
 from aggregator.repository import MusicRepository
 

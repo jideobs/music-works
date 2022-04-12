@@ -12,7 +12,7 @@ class Reconciliator:
         with open(csv_file, 'r') as csvfile:
             metadata_reader= csv.DictReader(csvfile)
             # Todo: find a way to reconcile duplicates before going to DB
-            # as to reduce the amount of transactions hitting the DB.
+            # in order to reduce the amount of transactions hitting the DB.
             for metadata in metadata_reader:
                 music_entry = MusicEntry(
                     title=metadata['title'],
@@ -20,7 +20,7 @@ class Reconciliator:
                     iswc=metadata['iswc'])
                 existing_music_entry = self._music_repository.get_music(music_entry)
                 if existing_music_entry:
-                    new_contributors = set(existing_music_entry.contributors).difference(music_entry.contributors)
+                    new_contributors = set(music_entry.contributors).difference(existing_music_entry.contributors)
                     self._music_repository.update_music(
                         existing_music_entry.id, 
                         music_entry.iswc, 

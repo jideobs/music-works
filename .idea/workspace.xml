@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de11d62-7a44-4986-b281-3ca6cfb058ef" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="2de11d62-7a44-4986-b281-3ca6cfb058ef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/django/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/django/entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aggregator/management/commands/reconciler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/aggregator/management/commands/reconciler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aggregator/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/aggregator/repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aggregator/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/aggregator/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/musicaggregator/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/musicworks/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/musicaggregator/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/musicworks/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/musicaggregator/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/musicworks/settings/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/musicaggregator/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/musicworks/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/musicaggregator/settings/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/musicworks/settings/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/musicaggregator/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/musicworks/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/musicaggregator/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/musicworks/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reconciler/reconliator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reconciler/reconliator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reconciler/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reconciler/tests.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/aggregator/apps.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/aggregator/models.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/aggregator/tests.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/aggregator/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,6 +49,7 @@
     <option name="width" value="1663" />
     <option name="height" value="1057" />
   </component>
+  <component name="ProjectId" id="27flov7Doa0Coe7GgxyoilEQHnX" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -97,6 +87,10 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -105,18 +99,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
